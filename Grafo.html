@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+    
+    <div class="container">
+        <h1>Exame-Grupo 2</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="Pilha.html">PILHA</a></li>
+                <li><a href="ListaLigada.html">LISTA LIGADA</a></li>
+                <li><a href="Grafo.html">GRAFO</a></li>
+            </ul>
+        </nav>
+        <div id="sketch-container"></div>
+        <div class="graph-controls">
+            <h2>Controles do Grafo</h2>
+            <div>
+                <label for="insertVertexValue">Inserir Vértice:</label>
+                <input type="text" id="insertVertexValue" placeholder="Vértice">
+                <button onclick="insertVertex()">Inserir</button>
+            </div>
+            <div>
+                <label for="removeVertexValue">Remover Vértice:</label>
+                <input type="text" id="removeVertexValue" placeholder="Vértice">
+                <button onclick="removeVertex()">Remover</button>
+            </div>
+            <div>
+                <label for="insertEdgeFrom">Inserir Aresta (de para peso):</label>
+                <input type="text" id="insertEdgeFrom" placeholder="De">
+                <input type="text" id="insertEdgeTo" placeholder="Para">
+                <input type="number" id="insertEdgeWeight" placeholder="Peso">
+                <button onclick="insertEdge()">Inserir</button>
+            </div>
+            <div>
+                <label for="removeEdgeFrom">Remover Aresta (de para):</label>
+                <input type="text" id="removeEdgeFrom" placeholder="De">
+                <input type="text" id="removeEdgeTo" placeholder="Para">
+                <button onclick="removeEdge()">Remover</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="grafo.js" defer></script>
+</head>
+</html>

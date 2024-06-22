@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input {
+    width: calc(100% - 32px);
+    max-width: 300px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #0074D9;
+}
+
+button.btn {
+    background-color: #0074D9;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+button.btn:hover {
+    background-color: #005ea6;
+    transform: scale(1.05);
+}
+
+button.btn:active {
+    background-color: #004080;
+    transform: scale(1);
+}
+
+#dataDisplay {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    min-height: 100px;
+    transition: background-color 0.3s ease;
+}
+
+#dataDisplay:hover {
+    background-color: #f1f1f1;
+}
+
+/* Stack display styling */
+.stack-display {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.stack-node {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #0074D9;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.stack-node:hover {
+    background-color: #005ea6;
+    transform: scale(1.1);
+}
+
+.stack-arrow {
+    font-size: 24px;
+    color: #0074D9;
+}
+
+.linked-list-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+.node {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #0074D9;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.node:hover {
+    background-color: #005ea6;
+    transform: scale(1.1);
+}
+
+.arrow {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 24px;
+    color: #0074D9;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 0.5s forwards;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0074D9;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #005ea6;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#sketch-container {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Graph controls styling */
+.graph-controls {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.graph-controls h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.graph-controls div {
+    margin-bottom: 10px;
+}
+
+.graph-controls label {
+    display: inline-block;
+    width: 120px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.graph-controls input[type="text"],
+.graph-controls input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.graph-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.graph-controls button:hover {
+    background-color: #005ea6;
+    transform: scale(1.05);
+}
+
+.graph-controls button:active {
+    background-color: #004080;
+    transform: scale(1);
+}
